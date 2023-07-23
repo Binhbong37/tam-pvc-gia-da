@@ -3,6 +3,7 @@ import "./Sidebar.css";
 import { UilBars } from "@iconscout/react-unicons";
 import { motion } from "framer-motion";
 import { SidebarData } from "../data";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   const [selected,setSelected] = useState(0)
@@ -43,14 +44,18 @@ const Sidebar = () => {
       <div className="menu">
         {SidebarData.map((item, index) => {
           return (
-            <div key={index}
+            <Link to={item.path} key={index}>
+            <div 
             className={selected === index ? "menuItem active" : 'menuItem'}
             onClick={() => closeActive(index)}
             >
+              
               <item.icon />
           
           <span>{item.heading}</span>
+          
         </div>
+        </Link>
           )
         })}
       </div>

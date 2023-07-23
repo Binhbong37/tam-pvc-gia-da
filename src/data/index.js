@@ -23,18 +23,22 @@ export const SidebarData = [
     {
         icon: UilEstate,
         heading: 'Tấm PVC',
+        path: '/',
     },
     {
         icon: UilClipboardAlt,
         heading: 'Tấm Nano',
+        path: '/nano',
     },
     {
         icon: UilUsersAlt,
         heading: 'Lam sóng',
+        path: 'lam-song',
     },
     {
         icon: UilPackage,
         heading: 'Keo dán & phụ kiện khác',
+        path: '/phu-kien-khac',
     },
 ];
 
