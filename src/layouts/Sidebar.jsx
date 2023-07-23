@@ -2,17 +2,41 @@ import React, { useState } from "react";
 import "./Sidebar.css";
 import { UilBars } from "@iconscout/react-unicons";
 import { motion } from "framer-motion";
-import { UilSignOutAlt } from "@iconscout/react-unicons";
 import { SidebarData } from "../data";
-
-
 
 const Sidebar = () => {
   const [selected,setSelected] = useState(0)
+  const [expand, setExpand] = useState(true)
   
+
+  const closeActive = (ix) => {
+    setSelected(ix)
+    setExpand(false)
+  }
+
+  const sideBarVariant = {
+    true: {
+      left:'0'
+    },
+    false: {
+      left:'-45%'
+    }
+  }
   return (
-    <div>
-      <div className="tile">
+    <>
+    <div className="bars" style={expand? {
+      left:"45%"
+    }:{left:"5%"}}
+    onClick={() => setExpand(!expand)}
+    >
+        <UilBars />
+      </div>
+    <motion.div className="sidebar"
+    variants={sideBarVariant}
+    animate={window.innerWidth <= 768 ? `${expand}` : ``}
+    >
+      
+      <div className="title-logo">
         <h2>KANG BANG</h2>
       </div>
       {/* menu */}
@@ -21,7 +45,7 @@ const Sidebar = () => {
           return (
             <div key={index}
             className={selected === index ? "menuItem active" : 'menuItem'}
-            onClick={() => setSelected(index)}
+            onClick={() => closeActive(index)}
             >
               <item.icon />
           
@@ -31,7 +55,8 @@ const Sidebar = () => {
         })}
       </div>
       
-    </div>
+    </motion.div>
+    </>
   );
 };
 

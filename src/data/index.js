@@ -4,7 +4,6 @@ import {
     UilClipboardAlt,
     UilUsersAlt,
     UilPackage,
-    UilChart,
 } from '@iconscout/react-unicons';
 
 import LSFX14 from '../assets/imgs/LSFX14.jpg';

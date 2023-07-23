@@ -1,14 +1,13 @@
 import React from "react";
 
 import "./MainDash.css";
-import Card from "../../components/Card";
 import Header from '../../components/Header'
+import Cards from "../../components/Cards";
 const MainDash = () => {
   return (
     <div className="MainDash">
       <Header />
-      
-      <Card />
+      <Cards />
     </div>
   );
 };

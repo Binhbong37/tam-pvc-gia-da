@@ -43,4 +43,8 @@
     .AppGlass {
         grid-template-columns: 1fr;
     }
+
+    .AppGlass::-webkit-scrollbar {
+        display: none;
+    }
 }
