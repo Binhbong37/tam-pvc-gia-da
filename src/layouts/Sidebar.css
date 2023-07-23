@@ -3,6 +3,7 @@
     height: 100vh;
     position: fixed;
     width: 200px;
+    margin-top: -2rem;
     background-color: #eee;
 }
 
@@ -17,9 +18,6 @@
     padding-left: 1rem;
 }
 /* logo */
-.bars {
-    display: none;
-}
 
 /* menu */
 .menu {
@@ -33,7 +31,7 @@
     align-items: center;
     gap: 1rem;
     height: 2.5rem;
-    margin-left: 2rem;
+    padding: 0 1.5rem;
     position: relative;
     transition: all 300ms ease;
     border-radius: 0.7rem;
@@ -43,67 +41,20 @@
     cursor: pointer;
 }
 
-/* .menu .menuItem:last-child {
-  position: absolute;
-  bottom: 2.3rem;
-  width: 100%;
-} */
-
 .active {
-    background: var(--activeItem);
-    margin-left: 0;
-}
-.active::before {
-    content: '';
-    width: 8px;
-    height: 100%;
-    background: var(--pink);
-    margin-right: calc(1rem - 8px);
+    margin-left: 1rem;
+    background-color: red;
+    color: #fff;
+    padding: 0 1rem;
 }
 
 /* Tablets */
 @media screen and (max-width: 1200px) {
-    .menuItem > span {
-        display: none;
-    }
-    .logo {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 768px) {
     .sidebar {
-        position: fixed;
-        z-index: 9;
-        background: #eee;
-        width: 45%;
-        padding-right: 1rem;
-        height: 100%;
-    }
-    .menuItem > span {
-        display: block;
-    }
-    .logo {
-        display: flex;
-    }
-    /* .menu .menuItem:last-child {
-        position: relative;
-        margin-top: 6rem;
-    } */
-    .bars {
-        display: flex;
-        position: fixed;
-        top: 2rem;
-        left: 45%;
-        background: rgb(235, 118, 118);
-        padding: 10px;
-        border-radius: 10px;
-        z-index: 10;
-        cursor: pointer;
-        color: #fff;
+        width: 100px;
     }
 
-    .closet {
-        left: '-45%';
+    .menuItem > span {
+        display: none;
     }
 }

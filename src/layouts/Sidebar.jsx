@@ -12,7 +12,6 @@ const Sidebar = () => {
 
   const closeActive = (ix) => {
     setSelected(ix)
-    setExpand(false)
   }
 
   const sideBarVariant = {
@@ -50,7 +49,8 @@ const Sidebar = () => {
             onClick={() => closeActive(index)}
             >
               
-              <item.icon />
+              <item.icon
+              />
           
           <span>{item.heading}</span>
           
