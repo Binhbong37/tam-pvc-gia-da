@@ -23,12 +23,8 @@
 }
 
 .AppGlass {
-    display: grid;
     height: 100%;
     width: 100%;
-    background: var(--glass);
-    gap: 16px;
-    grid-template-columns: 11rem auto;
 }
 
 @media screen and (max-width: 1200px) {
