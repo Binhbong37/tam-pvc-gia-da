@@ -1,9 +1,12 @@
 import React from 'react';
-import Cards from '../../components/Cards';
+import { PvcVanDa } from '../../data';
+import Card from '../../components/Card'
 
 const TamPVC = () => {
   return (
-    <div><Cards /></div>
+    <div className='cards'>
+      {PvcVanDa.map((item,index) => <Card key={index} imga={item.img} title={item.title} />)}
+    </div>
   )
 }
 

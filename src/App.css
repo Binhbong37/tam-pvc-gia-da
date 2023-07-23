@@ -29,7 +29,6 @@
     background: var(--glass);
     gap: 16px;
     grid-template-columns: 11rem auto;
-    overflow: hidden;
 }
 
 @media screen and (max-width: 1200px) {
@@ -46,5 +45,22 @@
 
     .AppGlass::-webkit-scrollbar {
         display: none;
+    }
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@media screen and (max-width: 1200px) {
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
