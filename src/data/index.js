@@ -6,19 +6,110 @@ import {
     UilPackage,
 } from '@iconscout/react-unicons';
 
-import LSFX14 from '../assets/imgs/LSFX14.jpg';
-import LSFX34 from '../assets/imgs/LSFX34.jpg';
-import LSFX237 from '../assets/imgs/LSFX237eDit.png';
-import LSFX49 from '../assets/imgs/LSFX49.jpg';
-import vd01 from '../assets/imgs/01.jpg';
-import vd02 from '../assets/imgs/02.jpg';
-import vd03 from '../assets/imgs/03.jpg';
-import vd04 from '../assets/imgs/04.jpg';
-import vd05 from '../assets/imgs/05.jpg';
+import vd01 from '../assets/imgs/tampvc/01.jpg';
+import vd02 from '../assets/imgs/tampvc/02.jpg';
+import vd03 from '../assets/imgs/tampvc/03.jpg';
+import vd04 from '../assets/imgs/tampvc/04.jpg';
+import vd05 from '../assets/imgs/tampvc/05.jpg';
+import vd06 from '../assets/imgs/tampvc/06.jpg';
+import vd08B from '../assets/imgs/tampvc/08B.jpg';
+import vd09 from '../assets/imgs/tampvc/09.jpg';
+import vd10 from '../assets/imgs/tampvc/10.jpg';
+import vd12 from '../assets/imgs/tampvc/12.jpg';
+import vd13 from '../assets/imgs/tampvc/13.jpg';
+import vd14B from '../assets/imgs/tampvc/14B.jpg';
+import vd15B from '../assets/imgs/tampvc/15B.jpg';
+import vd15 from '../assets/imgs/tampvc/15.jpg';
+import vd17 from '../assets/imgs/tampvc/17.jpg';
+import vd18 from '../assets/imgs/tampvc/18.jpg';
+import vd20 from '../assets/imgs/tampvc/20.jpg';
+import vd21 from '../assets/imgs/tampvc/21.jpg';
+import vd23 from '../assets/imgs/tampvc/23.jpg';
+import vd24 from '../assets/imgs/tampvc/24.jpg';
+import vd25 from '../assets/imgs/tampvc/25.jpg';
+import vd27 from '../assets/imgs/tampvc/27.jpg';
+import vd29 from '../assets/imgs/tampvc/29.jpg';
+import vd35 from '../assets/imgs/tampvc/35.jpg';
+import vd37 from '../assets/imgs/tampvc/37.jpg';
+import vd38 from '../assets/imgs/tampvc/38.jpg';
+import vd39 from '../assets/imgs/tampvc/39.jpg';
+import vd41 from '../assets/imgs/tampvc/41.jpg';
+import vd42 from '../assets/imgs/tampvc/42.jpg';
+import vd43 from '../assets/imgs/tampvc/43.jpg';
+import vd47 from '../assets/imgs/tampvc/47.jpg';
+import vd50 from '../assets/imgs/tampvc/50.jpg';
+import vd52 from '../assets/imgs/tampvc/52.jpg';
+import vd53 from '../assets/imgs/tampvc/53.jpg';
+import vd54 from '../assets/imgs/tampvc/54.jpg';
+import vd55 from '../assets/imgs/tampvc/55.jpg';
+import vd56 from '../assets/imgs/tampvc/56.jpg';
+import vd58 from '../assets/imgs/tampvc/58.jpg';
+import vd59 from '../assets/imgs/tampvc/59.jpg';
+import vd59B from '../assets/imgs/tampvc/59B.jpg';
+import vd61 from '../assets/imgs/tampvc/61.jpg';
+import vd63 from '../assets/imgs/tampvc/63.jpg';
+import vd65 from '../assets/imgs/tampvc/65.jpg';
+import vd66 from '../assets/imgs/tampvc/66.jpg';
+import vd67 from '../assets/imgs/tampvc/67.jpg';
+import vd68 from '../assets/imgs/tampvc/68.jpg';
+import vd71 from '../assets/imgs/tampvc/71.jpg';
+import vd73 from '../assets/imgs/tampvc/73.jpg';
+import vd74 from '../assets/imgs/tampvc/74.jpg';
+import vd75 from '../assets/imgs/tampvc/75.jpg';
+import vd77 from '../assets/imgs/tampvc/77.jpg';
+import vd77B from '../assets/imgs/tampvc/77B.jpg';
+import vd79 from '../assets/imgs/tampvc/79.jpg';
+import vd79B from '../assets/imgs/tampvc/79B.jpg';
+import vd81 from '../assets/imgs/tampvc/81.jpg';
+import vd82 from '../assets/imgs/tampvc/82.jpg';
+import vd83 from '../assets/imgs/tampvc/83.jpg';
+import vd86 from '../assets/imgs/tampvc/86.jpg';
+import vd87 from '../assets/imgs/tampvc/87.jpg';
+import vd88 from '../assets/imgs/tampvc/88.jpg';
+import vd90 from '../assets/imgs/tampvc/90.jpg';
+import vd93 from '../assets/imgs/tampvc/93.jpg';
+import vd94 from '../assets/imgs/tampvc/94.jpg';
+import vd95 from '../assets/imgs/tampvc/95.jpg';
+import vd96 from '../assets/imgs/tampvc/96.jpg';
+import vd97 from '../assets/imgs/tampvc/97.jpg';
+import vd98 from '../assets/imgs/tampvc/98.jpg';
+import vd100 from '../assets/imgs/tampvc/100.jpg';
+import vd101 from '../assets/imgs/tampvc/101.jpg';
+import vd102 from '../assets/imgs/tampvc/VD102.jpg';
+import vd103 from '../assets/imgs/tampvc/VD103.jpg';
+import vd104 from '../assets/imgs/tampvc/VD104.jpg';
+import vd105 from '../assets/imgs/tampvc/VD105.jpg';
+import vd107 from '../assets/imgs/tampvc/107.jpg';
+import vd108 from '../assets/imgs/tampvc/108.jpg';
+import vd109 from '../assets/imgs/tampvc/109.jpg';
+import vd110 from '../assets/imgs/tampvc/110.jpg';
+import vd111 from '../assets/imgs/tampvc/111.jpg';
 
-// Analytics Cards imports
+import KL8074 from '../assets/imgs/tamDaNang/KL8074.png';
+import KL8079 from '../assets/imgs/tamDaNang/KL8079.png';
+import P12 from '../assets/imgs/tamDaNang/P12.png';
+import P14 from '../assets/imgs/tamDaNang/P14.png';
+import P16 from '../assets/imgs/tamDaNang/P16.png';
+import P17 from '../assets/imgs/tamDaNang/P17.png';
+import P20 from '../assets/imgs/tamDaNang/P20.png';
+import P29 from '../assets/imgs/tamDaNang/P29.png';
+import P33 from '../assets/imgs/tamDaNang/P33.png';
+import P34 from '../assets/imgs/tamDaNang/P34.png';
+import P52 from '../assets/imgs/tamDaNang/P52.png';
+import P55 from '../assets/imgs/tamDaNang/P55.png';
+import P66 from '../assets/imgs/tamDaNang/P66.png';
+import P86 from '../assets/imgs/tamDaNang/P86.png';
+import P89 from '../assets/imgs/tamDaNang/P89.png';
+import P92 from '../assets/imgs/tamDaNang/P92.png';
 
-// Recent Card Imports
+import FX14_3s from '../assets/imgs/lamsong/Lam3s/FX14.jpg';
+import FX15_3s from '../assets/imgs/lamsong/Lam3s/FX15.jpg';
+import C2004_3s from '../assets/imgs/lamsong/Lam3s/C2004.jpg';
+import FX34_3s from '../assets/imgs/lamsong/Lam3s/FX34.jpg';
+import FX237_3s from '../assets/imgs/lamsong/Lam3s/FX237.jpg';
+import FX49_3s from '../assets/imgs/lamsong/Lam3s/FX49.jpg';
+import HJL_3s from '../assets/imgs/lamsong/Lam3s/HJL.jpg';
+import HY102_3s from '../assets/imgs/lamsong/Lam3s/HY-102.jpg';
 
 // Sidebar Data
 export const SidebarData = [
@@ -30,7 +121,7 @@ export const SidebarData = [
     {
         icon: UilEstate,
         heading: 'Tấm đa năng',
-        path: '/',
+        path: '/tam-da-nang',
     },
     {
         icon: UilClipboardAlt,
@@ -50,23 +141,112 @@ export const SidebarData = [
 ];
 
 export const PvcVanDa = [
-    { id: 4, title: 'VD01', img: vd01 },
-    { id: 5, title: 'VD02', img: vd02 },
-    { id: 6, title: 'VD03', img: vd03 },
-    { id: 7, title: 'VD04', img: vd04 },
-    { id: 8, title: 'VD05', img: vd05 },
-    { id: 9, title: 'VD05', img: vd05 },
-    { id: 10, title: 'VD01', img: vd01 },
-    { id: 11, title: 'VD02', img: vd02 },
-    { id: 12, title: 'VD03', img: vd03 },
-    { id: 13, title: 'VD04', img: vd04 },
-    { id: 14, title: 'VD05', img: vd05 },
-    { id: 15, title: 'VD05', img: vd05 },
+    { id: 1, title: 'VD01', img: vd01 },
+    { id: 2, title: 'VD02', img: vd02 },
+    { id: 3, title: 'VD03', img: vd03 },
+    { id: 4, title: 'VD04', img: vd04 },
+    { id: 5, title: 'VD05', img: vd05 },
+    { id: 6, title: 'VD06', img: vd06 },
+    { id: 7, title: 'VD008B', img: vd08B },
+    { id: 8, title: 'VD09', img: vd09 },
+    { id: 9, title: 'VD10', img: vd10 },
+    { id: 10, title: 'VD12', img: vd12 },
+    { id: 11, title: 'VD13', img: vd13 },
+    { id: 12, title: 'VD14B', img: vd14B },
+    { id: 13, title: 'VD015', img: vd15 },
+    { id: 14, title: 'VD15B', img: vd15B },
+    { id: 15, title: 'VD17', img: vd17 },
+    { id: 16, title: 'VD18', img: vd18 },
+    { id: 17, title: 'VD20', img: vd20 },
+    { id: 18, title: 'VD21', img: vd21 },
+    { id: 19, title: 'VD23', img: vd23 },
+    { id: 20, title: 'VD24', img: vd24 },
+    { id: 21, title: 'VD25', img: vd25 },
+    { id: 22, title: 'VD27', img: vd27 },
+    { id: 23, title: 'VD29', img: vd29 },
+    { id: 24, title: 'VD35', img: vd35 },
+    { id: 25, title: 'VD37', img: vd37 },
+    { id: 26, title: 'VD38', img: vd38 },
+    { id: 27, title: 'VD39', img: vd39 },
+    { id: 28, title: 'VD41', img: vd41 },
+    { id: 29, title: 'VD42', img: vd42 },
+    { id: 30, title: 'VD43', img: vd43 },
+    { id: 31, title: 'VD47', img: vd47 },
+    { id: 32, title: 'VD50', img: vd50 },
+    { id: 33, title: 'VD52', img: vd52 },
+    { id: 34, title: 'VD53', img: vd53 },
+    { id: 35, title: 'VD54', img: vd54 },
+    { id: 36, title: 'VD55', img: vd55 },
+    { id: 37, title: 'VD56', img: vd56 },
+    { id: 38, title: 'VD58', img: vd58 },
+    { id: 39, title: 'VD59', img: vd59 },
+    { id: 40, title: 'VD59B', img: vd59B },
+    { id: 41, title: 'VD61', img: vd61 },
+    { id: 42, title: 'VD63', img: vd63 },
+    { id: 43, title: 'VD65', img: vd65 },
+    { id: 44, title: 'VD66', img: vd66 },
+    { id: 45, title: 'VD67', img: vd67 },
+    { id: 46, title: 'VD68', img: vd68 },
+    { id: 47, title: 'VD71', img: vd71 },
+    { id: 48, title: 'VD73', img: vd73 },
+    { id: 49, title: 'VD74', img: vd74 },
+    { id: 50, title: 'VD75', img: vd75 },
+    { id: 51, title: 'VD77', img: vd77 },
+    { id: 52, title: 'VD77B', img: vd77B },
+    { id: 53, title: 'VD79', img: vd79 },
+    { id: 54, title: 'VD79B', img: vd79B },
+    { id: 55, title: 'VD81', img: vd81 },
+    { id: 56, title: 'VD82', img: vd82 },
+    { id: 57, title: 'VD83', img: vd83 },
+    { id: 58, title: 'VD86', img: vd86 },
+    { id: 59, title: 'VD87', img: vd87 },
+    { id: 60, title: 'VD88', img: vd88 },
+    { id: 61, title: 'VD90', img: vd90 },
+    { id: 62, title: 'VD93', img: vd93 },
+    { id: 63, title: 'VD94', img: vd94 },
+    { id: 64, title: 'VD95', img: vd95 },
+    { id: 65, title: 'VD96', img: vd96 },
+    { id: 66, title: 'VD97', img: vd97 },
+    { id: 67, title: 'VD98', img: vd98 },
+    { id: 68, title: 'VD100', img: vd100 },
+    { id: 69, title: 'VD101', img: vd101 },
+    { id: 70, title: 'VD102', img: vd102 },
+    { id: 71, title: 'VD103', img: vd103 },
+    { id: 72, title: 'VD104', img: vd104 },
+    { id: 73, title: 'VD105', img: vd105 },
+    { id: 74, title: 'VD107', img: vd107 },
+    { id: 75, title: 'VD108', img: vd108 },
+    { id: 76, title: 'VD109', img: vd109 },
+    { id: 77, title: 'VD110', img: vd110 },
+    { id: 78, title: 'VD111', img: vd111 },
+];
+
+export const TamDaNangop = [
+    { id: 1, title: 'KL8074', img: KL8074 },
+    { id: 2, title: 'KL8079', img: KL8079 },
+    { id: 3, title: 'P12', img: P12 },
+    { id: 4, title: 'P14', img: P14 },
+    { id: 5, title: 'P16', img: P16 },
+    { id: 6, title: 'P17', img: P17 },
+    { id: 7, title: 'P20', img: P20 },
+    { id: 8, title: 'P29', img: P29 },
+    { id: 9, title: 'P33', img: P33 },
+    { id: 10, title: 'P34', img: P34 },
+    { id: 11, title: 'P52', img: P52 },
+    { id: 12, title: 'P55', img: P55 },
+    { id: 13, title: 'P66', img: P66 },
+    { id: 14, title: 'P86', img: P86 },
+    { id: 15, title: 'P89', img: P89 },
+    { id: 16, title: 'P92', img: P92 },
 ];
 
 export const LamSong = [
-    { id: 1, title: 'FX237', img: LSFX237 },
-    { id: 2, title: 'FX14', img: LSFX14 },
-    { id: 3, title: 'FX34', img: LSFX34 },
-    { id: 3, title: 'FX49', img: LSFX49 },
+    { id: 1, title: 'FX237', img: FX237_3s },
+    { id: 2, title: 'FX14', img: FX14_3s },
+    { id: 3, title: 'FX15', img: FX15_3s },
+    { id: 4, title: 'FX49', img: FX49_3s },
+    { id: 5, title: 'HJL', img: HJL_3s },
+    { id: 6, title: 'HY-102', img: HY102_3s },
+    { id: 7, title: 'FX34', img: FX34_3s },
+    { id: 8, title: 'C2004', img: C2004_3s },
 ];

@@ -5,6 +5,7 @@ import TamPVC from './pages/TamPVC';
 import Nano from './pages/Nano';
 import Lamsong from './pages/Lamsong';
 import PhuKienKhac from './pages/PhuKienKhac';
+import TamDaNang from './pages/TamDaNang';
 function App() {
     return (
         <BrowserRouter>
@@ -13,6 +14,7 @@ function App() {
                 <div className="rightSide">
                     <Routes>
                         <Route path="/" element={<TamPVC />} />
+                        <Route path="/tam-da-nang" element={<TamDaNang />} />
                         <Route path="/nano" element={<Nano />} />
                         <Route path="/lam-song" element={<Lamsong />} />
                         <Route

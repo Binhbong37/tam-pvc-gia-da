@@ -1,18 +1,18 @@
 import React from 'react';
-import { PvcVanDa } from '../../data';
+import { TamDaNangop } from '../../data';
 import Card from '../../components/Card';
 import { Image } from 'antd';
 
-const TamPVC = () => {
+const TamDaNang = () => {
   return (
     <div className='cards'>
       <Image.PreviewGroup>
         
-      {PvcVanDa.map((item, idx) => <Card key={idx} imga={item.img} title={item.title}/>)}
+      {TamDaNangop.map((item, idx) => <Card key={idx} imga={item.img} title={item.title}/>)}
             </Image.PreviewGroup>
       
     </div>
   )
 }
 
-export default TamPVC
+export default TamDaNang
