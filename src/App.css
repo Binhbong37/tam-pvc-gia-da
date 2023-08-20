@@ -1,5 +1,6 @@
 .rightSide {
     margin-left: 250px;
+    padding-bottom: 1rem;
 }
 
 h1 {
@@ -8,16 +9,35 @@ h1 {
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
 }
 
 /* Tablets */
 @media screen and (max-width: 1200px) {
+    .sidebar {
+        height: 100%;
+    }
     .rightSide {
-        margin-left: 150px;
+        margin-left: 130px;
     }
 
     .cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .cards {
         grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .rightSide {
+        margin-left: 120px;
+    }
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
     }
 }

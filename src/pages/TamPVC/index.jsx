@@ -1,11 +1,16 @@
 import React from 'react';
 import { PvcVanDa } from '../../data';
-import Card from '../../components/Card'
+import Card from '../../components/Card';
+import { Image } from 'antd';
 
 const TamPVC = () => {
   return (
     <div className='cards'>
-      {PvcVanDa.map((item,index) => <Card key={index} imga={item.img} title={item.title} />)}
+      <Image.PreviewGroup>
+        
+      {PvcVanDa.map((item) => <Card key={item.id} imga={item.img} title={item.title}/>)}
+            </Image.PreviewGroup>
+      
     </div>
   )
 }

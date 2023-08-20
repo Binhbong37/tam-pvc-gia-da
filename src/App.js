@@ -10,7 +10,6 @@ function App() {
         <BrowserRouter>
             <div className="App">
                 <Sidebar />
-
                 <div className="rightSide">
                     <Routes>
                         <Route path="/" element={<TamPVC />} />

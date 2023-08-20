@@ -28,6 +28,11 @@ export const SidebarData = [
         path: '/',
     },
     {
+        icon: UilEstate,
+        heading: 'Tấm đa năng',
+        path: '/',
+    },
+    {
         icon: UilClipboardAlt,
         heading: 'Tấm Nano',
         path: '/nano',
@@ -50,6 +55,13 @@ export const PvcVanDa = [
     { id: 6, title: 'VD03', img: vd03 },
     { id: 7, title: 'VD04', img: vd04 },
     { id: 8, title: 'VD05', img: vd05 },
+    { id: 9, title: 'VD05', img: vd05 },
+    { id: 10, title: 'VD01', img: vd01 },
+    { id: 11, title: 'VD02', img: vd02 },
+    { id: 12, title: 'VD03', img: vd03 },
+    { id: 13, title: 'VD04', img: vd04 },
+    { id: 14, title: 'VD05', img: vd05 },
+    { id: 15, title: 'VD05', img: vd05 },
 ];
 
 export const LamSong = [
