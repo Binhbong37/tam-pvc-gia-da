@@ -7,9 +7,8 @@ const TamPVC = () => {
   return (
     <div className='cards'>
       <Image.PreviewGroup>
-        
-      {PvcVanDa.map((item, idx) => <Card key={idx} imga={item.img} title={item.title}/>)}
-            </Image.PreviewGroup>
+        {PvcVanDa.map((item, idx) => <Card key={idx} imga={item.img} title={item.title}/>)}
+    </Image.PreviewGroup>
       
     </div>
   )

@@ -1,27 +1,30 @@
-.rightSide {
-    margin-left: 250px;
-    padding-bottom: 1rem;
+.App {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+.appHeader {
+    min-height: 60px;
+    width: 100%;
+    display: flex;
+    margin-bottom: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 2px 2px #00000033;
 }
 
-h1 {
-    margin: 0;
+.appMenu {
+    border: none;
 }
 
 .cards {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 1rem;
 }
 
 /* Tablets */
 @media screen and (max-width: 1200px) {
-    .sidebar {
-        height: 100%;
-    }
-    .rightSide {
-        margin-left: 130px;
-    }
-
     .cards {
         grid-template-columns: repeat(4, 1fr);
     }
@@ -34,9 +37,6 @@ h1 {
 }
 
 @media screen and (max-width: 790px) {
-    .rightSide {
-        margin-left: 120px;
-    }
     .cards {
         grid-template-columns: repeat(2, 1fr);
     }
