@@ -1,16 +1,15 @@
-.App {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 100vh;
-}
 .appHeader {
-    min-height: 60px;
+    position: fixed;
+    top: 0;
     width: 100%;
+    z-index: 10;
+    min-height: 60px;
+    padding: 0 1.5rem;
     display: flex;
     margin-bottom: 2rem;
     justify-content: space-between;
     align-items: center;
+    background-color: #fff;
     box-shadow: 1px 2px 2px #00000033;
 }
 
@@ -18,9 +17,15 @@
     border: none;
 }
 
+.main-layout {
+    margin-top: 80px;
+    padding: 1rem 1.5rem;
+}
+
 .cards {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    grid-template-columns: repeat(6, 1fr);
 }
 
 /* Tablets */

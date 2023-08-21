@@ -7,9 +7,8 @@ const TamDaNang = () => {
   return (
     <div className='cards'>
       <Image.PreviewGroup>
-        
-      {TamDaNangop.map((item, idx) => <Card key={idx} imga={item.img} title={item.title}/>)}
-            </Image.PreviewGroup>
+        {TamDaNangop.map((item, idx) => <Card key={idx} imga={item.img} title={item.title}/>)}
+      </Image.PreviewGroup>
       
     </div>
   )

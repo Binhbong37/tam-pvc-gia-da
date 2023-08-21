@@ -11,7 +11,7 @@ function App() {
         <BrowserRouter>
             <div className="App">
                 <AppHeader />
-                <div className="">
+                <div className="main-layout">
                     <Routes>
                         <Route path="/" element={<TamPVC />} />
                         <Route path="/tam-da-nang" element={<TamDaNang />} />
