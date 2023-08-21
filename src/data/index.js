@@ -111,6 +111,18 @@ import FX49_3s from '../assets/imgs/lamsong/Lam3s/FX49.jpg';
 import HJL_3s from '../assets/imgs/lamsong/Lam3s/HJL.jpg';
 import HY102_3s from '../assets/imgs/lamsong/Lam3s/HY-102.jpg';
 
+import C2004 from '../assets/imgs/nano/C2004.jpg';
+import A50072 from '../assets/imgs/nano/5007-2.jpg';
+import A816 from '../assets/imgs/nano/A816.jpg';
+import C2005 from '../assets/imgs/nano/C2005.jpg';
+import E1004 from '../assets/imgs/nano/E1004.jpg';
+import FX14 from '../assets/imgs/nano/FX14.jpg';
+import FX19 from '../assets/imgs/nano/FX19.jpg';
+import FX34 from '../assets/imgs/nano/FX34.jpg';
+import FX866 from '../assets/imgs/nano/FX866.jpg';
+import HJL from '../assets/imgs/nano/HJL.jpg';
+import KJM from '../assets/imgs/nano/KJM.jpg';
+import FX237 from '../assets/imgs/nano/FX237.jpg';
 // Sidebar Data
 export const SidebarData = [
     {
@@ -249,4 +261,19 @@ export const LamSong = [
     { id: 6, title: 'HY-102', img: HY102_3s },
     { id: 7, title: 'FX34', img: FX34_3s },
     { id: 8, title: 'C2004', img: C2004_3s },
+];
+
+export const TamNano = [
+    { id: 1, title: 'FX237', img: FX237 },
+    { id: 2, title: 'FX14', img: FX14 },
+    { id: 3, title: 'C2004', img: C2004 },
+    { id: 4, title: 'HJL', img: HJL },
+    { id: 5, title: 'KJM', img: KJM },
+    { id: 6, title: 'A5007', img: A50072 },
+    { id: 7, title: 'A816', img: A816 },
+    { id: 8, title: 'C2005', img: C2005 },
+    { id: 9, title: 'E1004', img: E1004 },
+    { id: 10, title: 'FX34', img: FX34 },
+    { id: 11, title: 'FX19', img: FX19 },
+    { id: 12, title: 'FX866', img: FX866 },
 ];

@@ -17,12 +17,25 @@
     border: none;
 }
 
+.iconMenu {
+    position: absolute;
+    cursor: pointer;
+    right: 70px;
+    top: 0px;
+    display: none;
+}
+
+.iconMenu {
+    font-size: 1.5rem;
+}
+
 .main-layout {
     margin-top: 80px;
     padding: 1rem 1.5rem;
 }
 
 .cards {
+    margin: 0 auto;
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(6, 1fr);
@@ -42,6 +55,13 @@
 }
 
 @media screen and (max-width: 790px) {
+    .appMenu {
+        display: none;
+    }
+
+    .iconMenu {
+        display: block;
+    }
     .cards {
         grid-template-columns: repeat(2, 1fr);
     }

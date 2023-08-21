@@ -1,4 +1,4 @@
-import { ShoppingCartOutlined } from '@ant-design/icons';
+import { MenuOutlined } from '@ant-design/icons';
 import {
     Badge,
     Button,
@@ -6,10 +6,8 @@ import {
     Drawer,
     Form,
     Input,
-    InputNumber,
     Menu,
     message,
-    Table,
     Typography,
 } from 'antd';
 import { useState } from 'react';
@@ -69,10 +67,12 @@ function AppHeader() {
         </div>
     );
 }
+
 function AppCart() {
+    const navigate = useNavigate();
+
     const [cartDrawerOpen, setCartDrawerOpen] = useState(false);
     const [checkoutDrawerOpen, setCheckoutDrawerOpen] = useState(false);
-    const [cartItems, setCartItems] = useState([]);
 
     const onConfirmOrder = (values) => {
         console.log({ values });
@@ -81,86 +81,71 @@ function AppCart() {
         message.success('Your order has been placed successfully.');
     };
 
+    const onMenuClick = (item) => {
+        setCheckoutDrawerOpen(false);
+        setCartDrawerOpen(false);
+        navigate(`/${item.key}`);
+    };
+
     return (
-        <div>
+        <div className="iconMenu">
             <Badge
                 onClick={() => {
                     setCartDrawerOpen(true);
                 }}
-                count={cartItems.length}
                 className="soppingCartIcon"
             >
-                <ShoppingCartOutlined />
+                <MenuOutlined className="iconMenu" />
             </Badge>
             <Drawer
                 open={cartDrawerOpen}
                 onClose={() => {
                     setCartDrawerOpen(false);
                 }}
-                title="Your Cart"
+                title="Menu"
                 contentWrapperStyle={{ width: 500 }}
             >
-                <Table
-                    pagination={false}
-                    columns={[
+                <Menu
+                    className=""
+                    mode="vertical"
+                    onClick={onMenuClick}
+                    items={[
                         {
-                            title: 'Title',
-                            dataIndex: 'title',
+                            label: 'Tấm PVC',
+                            key: '',
                         },
                         {
-                            title: 'Price',
-                            dataIndex: 'price',
-                            render: (value) => {
-                                return <span>${value}</span>;
-                            },
+                            label: 'Tấm đa năng',
+                            key: 'tam-da-nang',
                         },
                         {
-                            title: 'Quantity',
-                            dataIndex: 'quantity',
-                            render: (value, record) => {
-                                return (
-                                    <InputNumber
-                                        min={0}
-                                        defaultValue={value}
-                                        onChange={(value) => {
-                                            setCartItems((pre) =>
-                                                pre.map((cart) => {
-                                                    if (record.id === cart.id) {
-                                                        cart.total =
-                                                            cart.price * value;
-                                                    }
-                                                    return cart;
-                                                })
-                                            );
-                                        }}
-                                    ></InputNumber>
-                                );
-                            },
+                            label: 'Lam sóng',
+                            key: 'lam-songg',
+                            children: [
+                                {
+                                    label: 'Lam 3 sóng',
+                                    key: 'lam-song',
+                                },
+                                {
+                                    label: 'Lam 4 sóng',
+                                    key: 'lam-4-song',
+                                },
+                                {
+                                    label: 'Lam 5 sóng',
+                                    key: 'lam-5-song',
+                                },
+                            ],
                         },
                         {
-                            title: 'Total',
-                            dataIndex: 'total',
-                            render: (value) => {
-                                return <span>${value}</span>;
-                            },
+                            label: 'Tấm nano',
+                            key: 'nano',
+                        },
+                        {
+                            label: 'Keo dán & phụ kiện khác',
+                            key: 'phu-kien-khac',
                         },
                     ]}
-                    dataSource={cartItems}
-                    summary={(data) => {
-                        const total = data.reduce((pre, current) => {
-                            return pre + current.total;
-                        }, 0);
-                        return <span>Total: ${total}</span>;
-                    }}
                 />
-                <Button
-                    onClick={() => {
-                        setCheckoutDrawerOpen(true);
-                    }}
-                    type="primary"
-                >
-                    Checkout Your Cart
-                </Button>
             </Drawer>
             <Drawer
                 open={checkoutDrawerOpen}
