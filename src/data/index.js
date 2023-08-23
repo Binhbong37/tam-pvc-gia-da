@@ -1,10 +1,4 @@
 // Sidebar imports
-import {
-    UilEstate,
-    UilClipboardAlt,
-    UilUsersAlt,
-    UilPackage,
-} from '@iconscout/react-unicons';
 
 import vd01 from '../assets/imgs/tampvc/01.jpg';
 import vd02 from '../assets/imgs/tampvc/02.jpg';
@@ -29,6 +23,8 @@ import vd24 from '../assets/imgs/tampvc/24.jpg';
 import vd25 from '../assets/imgs/tampvc/25.jpg';
 import vd27 from '../assets/imgs/tampvc/27.jpg';
 import vd29 from '../assets/imgs/tampvc/29.jpg';
+import vd30 from '../assets/imgs/tampvc/30.jpg';
+import vd33 from '../assets/imgs/tampvc/33.png';
 import vd35 from '../assets/imgs/tampvc/35.jpg';
 import vd37 from '../assets/imgs/tampvc/37.jpg';
 import vd38 from '../assets/imgs/tampvc/38.jpg';
@@ -123,34 +119,14 @@ import FX866 from '../assets/imgs/nano/FX866.jpg';
 import HJL from '../assets/imgs/nano/HJL.jpg';
 import KJM from '../assets/imgs/nano/KJM.jpg';
 import FX237 from '../assets/imgs/nano/FX237.jpg';
+
+import keoCuon from '../assets/imgs/phukienkhac/keo2mat.jpg';
+import abu from '../assets/imgs/phukienkhac/abu.jpg';
+import keInox from '../assets/imgs/phukienkhac/keInox.jpg';
+import nepDen from '../assets/imgs/phukienkhac/nepMauDen.png';
+import nepNhom from '../assets/imgs/phukienkhac/nepNhom.jpg';
+import nepDong from '../assets/imgs/phukienkhac/nepMauDong.jpg';
 // Sidebar Data
-export const SidebarData = [
-    {
-        icon: UilEstate,
-        heading: 'Tấm PVC',
-        path: '/',
-    },
-    {
-        icon: UilEstate,
-        heading: 'Tấm đa năng',
-        path: '/tam-da-nang',
-    },
-    {
-        icon: UilClipboardAlt,
-        heading: 'Tấm Nano',
-        path: '/nano',
-    },
-    {
-        icon: UilUsersAlt,
-        heading: 'Lam sóng',
-        path: 'lam-song',
-    },
-    {
-        icon: UilPackage,
-        heading: 'Keo dán & phụ kiện khác',
-        path: '/phu-kien-khac',
-    },
-];
 
 export const PvcVanDa = [
     { id: 1, title: 'VD01', img: vd01 },
@@ -176,6 +152,8 @@ export const PvcVanDa = [
     { id: 21, title: 'VD25', img: vd25 },
     { id: 22, title: 'VD27', img: vd27 },
     { id: 23, title: 'VD29', img: vd29 },
+    { id: 'vd30', title: 'VD30', img: vd30 },
+    { id: 'vd33', title: 'VD33', img: vd33 },
     { id: 24, title: 'VD35', img: vd35 },
     { id: 25, title: 'VD37', img: vd37 },
     { id: 26, title: 'VD38', img: vd38 },
@@ -276,4 +254,13 @@ export const TamNano = [
     { id: 10, title: 'FX34', img: FX34 },
     { id: 11, title: 'FX19', img: FX19 },
     { id: 12, title: 'FX866', img: FX866 },
+];
+export const Phukien = [
+    { id: 1, title: 'Keo 2 mặt', img: keoCuon },
+    { id: 2, title: 'Keo dán đa năng', img: abu },
+    { id: 3, title: 'Nẹp nhôm', img: nepNhom },
+    { id: 4, title: 'Nẹp màu đồng', img: nepDong },
+    { id: 5, title: 'Nẹp màu đen', img: nepDen },
+    { id: 6, title: 'Ke inox', img: keInox },
+    { id: 8, title: 'C2005', img: C2005 },
 ];
