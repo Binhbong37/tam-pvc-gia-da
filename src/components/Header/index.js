@@ -1,10 +1,11 @@
 import { MenuOutlined } from '@ant-design/icons';
 import { Badge, Drawer, Menu, Typography } from 'antd';
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 function AppHeader() {
     const navigate = useNavigate();
+    const location = useLocation();
 
     const onMenuClick = (item) => {
         navigate(`/${item.key}`);
@@ -15,6 +16,7 @@ function AppHeader() {
                 className="appMenu"
                 onClick={onMenuClick}
                 mode="horizontal"
+                defaultSelectedKeys={[location.pathname.substring(1)]}
                 items={[
                     {
                         label: 'Tấm PVC',
@@ -26,11 +28,11 @@ function AppHeader() {
                     },
                     {
                         label: 'Lam sóng',
-                        key: 'lam-songg',
+                        key: 'lam-song',
                         children: [
                             {
                                 label: 'Lam 3 sóng',
-                                key: 'lam-song',
+                                key: 'lam-3-song',
                             },
                             {
                                 label: 'Lam 4 sóng',

@@ -107,6 +107,21 @@ import FX49_3s from '../assets/imgs/lamsong/Lam3s/FX49.jpg';
 import HJL_3s from '../assets/imgs/lamsong/Lam3s/HJL.jpg';
 import HY102_3s from '../assets/imgs/lamsong/Lam3s/HY-102.jpg';
 
+import FX14_4s from '../assets/imgs/lamsong/Lam4s/FX14.jpg';
+import FX15_4s from '../assets/imgs/lamsong/Lam4s/FX15.jpg';
+import FX237_4s from '../assets/imgs/lamsong/Lam4s/FX237.jpg';
+import FX34_4s from '../assets/imgs/lamsong/Lam4s/FX34.jpg';
+import FX49_4s from '../assets/imgs/lamsong/Lam4s/FX49.jpg';
+import HY102_4s from '../assets/imgs/lamsong/Lam4s/HY-102.jpg';
+import HJL_4s from '../assets/imgs/lamsong/Lam4s/HJL.jpg';
+
+import C2004_5s from '../assets/imgs/lamsong/Lam5s/C2004.jpg';
+import FX15_5s from '../assets/imgs/lamsong/Lam5s/FX15.jpg';
+import FX237_5s from '../assets/imgs/lamsong/Lam5s/FX237.jpg';
+import FX34_5s from '../assets/imgs/lamsong/Lam5s/FX34.jpg';
+import HJL_5s from '../assets/imgs/lamsong/Lam5s/HJL.jpg';
+import HY102_5s from '../assets/imgs/lamsong/Lam5s/HY-102.jpg';
+
 import C2004 from '../assets/imgs/nano/C2004.jpg';
 import A50072 from '../assets/imgs/nano/5007-2.jpg';
 import A816 from '../assets/imgs/nano/A816.jpg';
@@ -239,6 +254,23 @@ export const LamSong = [
     { id: 6, title: 'HY-102', img: HY102_3s },
     { id: 7, title: 'FX34', img: FX34_3s },
     { id: 8, title: 'C2004', img: C2004_3s },
+];
+export const Lam4Songcao = [
+    { id: 1, title: 'FX237', img: FX237_4s },
+    { id: 2, title: 'FX14', img: FX14_4s },
+    { id: 3, title: 'FX15', img: FX15_4s },
+    { id: 4, title: 'FX49', img: FX49_4s },
+    { id: 5, title: 'HJL', img: HJL_4s },
+    { id: 6, title: 'HY-102', img: HY102_4s },
+    { id: 7, title: 'FX34', img: FX34_4s },
+];
+export const Lam5Songthap = [
+    { id: 1, title: 'FX237', img: FX237_5s },
+    { id: 3, title: 'FX15', img: FX15_5s },
+    { id: 5, title: 'HJL', img: HJL_5s },
+    { id: 6, title: 'HY-102', img: HY102_5s },
+    { id: 7, title: 'FX34', img: FX34_5s },
+    { id: 7, title: 'C2004', img: C2004_5s },
 ];
 
 export const TamNano = [

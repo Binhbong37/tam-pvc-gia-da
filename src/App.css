@@ -17,6 +17,16 @@ h1 {
     margin: 0 !important;
     font-size: 1.5rem !important;
     margin-right: 3rem !important;
+    padding: 0.5rem;
+    border-radius: 5px;
+    color: #fff !important;
+    background-color: blue;
+}
+
+h1:hover {
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    cursor: pointer;
+    opacity: 0.7;
 }
 
 .appMenu {
@@ -56,11 +66,11 @@ h1 {
     }
 }
 
-@media screen and (max-width: 1000px) {
+/* @media screen and (max-width: 1000px) {
     .cards {
         grid-template-columns: repeat(3, 1fr);
     }
-}
+} */
 
 @media screen and (max-width: 790px) {
     .appMenu {
@@ -72,14 +82,24 @@ h1 {
         right: 50px;
     }
     .cards {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .main-layout {
-        padding-left: 0;
+        padding: 0 1rem;
     }
 
     .ant-drawer-content-wrapper {
         width: 300px !important;
+    }
+}
+
+@media (max-width: 447px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .main-layout {
+        padding: 0;
     }
 }

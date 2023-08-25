@@ -3,9 +3,6 @@
     height: 200px;
     background-color: #eee;
     border-radius: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .ant-image {
@@ -23,6 +20,6 @@
 }
 
 .card-footer {
-    padding: 0.5rem;
+    margin-top: 1rem;
     text-align: center;
 }
