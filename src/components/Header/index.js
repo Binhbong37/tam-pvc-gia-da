@@ -103,11 +103,11 @@ function AppCart() {
                         },
                         {
                             label: 'Lam sóng',
-                            key: 'lam-songg',
+                            key: 'lam-song',
                             children: [
                                 {
                                     label: 'Lam 3 sóng',
-                                    key: 'lam-song',
+                                    key: 'lam-3-song',
                                 },
                                 {
                                     label: 'Lam 4 sóng',

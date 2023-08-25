@@ -1,26 +1,14 @@
 import React from 'react';
-import Card from '../../components/Card';
-import { LamSong } from '../../data';
-
+import Lam3Song from './Lam3Song';
+import Lam4Song from './Lam4Song';
+import Lam5Song from './Lam5Song';
 const Lamsong
  = () => {
   return (
     <div>
-      {/* Lam 3 song thap */}
-      <h2>Lam 3 sóng thấp</h2>
-      <div className='cards'>
-      {LamSong.map((item,index) => <Card key={index} imga={item.img} title={item.title} />)}
-      </div>
-
-      <h2>Lam 4 sóng cao</h2>
-      <div className='cards'>
-      {LamSong.map((item,index) => <Card key={index} imga={item.img} title={item.title} />)}
-      </div>
-
-      <h2>Lam 5 sóng thấp</h2>
-      <div className='cards'>
-      {LamSong.map((item,index) => <Card key={index} imga={item.img} title={item.title} />)}
-      </div>
+      <Lam3Song />
+      <Lam4Song />
+      <Lam5Song />
     </div>
   )
 }
