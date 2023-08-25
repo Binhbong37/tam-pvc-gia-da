@@ -13,6 +13,12 @@
     box-shadow: 1px 2px 2px #00000033;
 }
 
+h1 {
+    margin: 0 !important;
+    font-size: 1.5rem !important;
+    margin-right: 3rem !important;
+}
+
 .appMenu {
     border: none;
     font-size: 1rem;
@@ -32,7 +38,7 @@
 }
 
 .main-layout {
-    margin-top: 80px;
+    margin: 80px auto 0 auto;
     padding: 1rem 1.5rem;
 }
 
@@ -70,6 +76,10 @@
     }
 
     .main-layout {
-        padding: 0;
+        padding-left: 0;
+    }
+
+    .ant-drawer-content-wrapper {
+        width: 300px !important;
     }
 }

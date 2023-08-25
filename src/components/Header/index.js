@@ -1,15 +1,5 @@
 import { MenuOutlined } from '@ant-design/icons';
-import {
-    Badge,
-    Button,
-    Checkbox,
-    Drawer,
-    Form,
-    Input,
-    Menu,
-    message,
-    Typography,
-} from 'antd';
+import { Badge, Drawer, Menu, Typography } from 'antd';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -62,7 +52,7 @@ function AppHeader() {
                     },
                 ]}
             />
-            {/* <Typography.Title>Tấm pvc</Typography.Title> */}
+            <Typography.Title>KangBang</Typography.Title>
             <AppCart />
         </div>
     );
@@ -72,17 +62,8 @@ function AppCart() {
     const navigate = useNavigate();
 
     const [cartDrawerOpen, setCartDrawerOpen] = useState(false);
-    const [checkoutDrawerOpen, setCheckoutDrawerOpen] = useState(false);
-
-    const onConfirmOrder = (values) => {
-        console.log({ values });
-        setCartDrawerOpen(false);
-        setCheckoutDrawerOpen(false);
-        message.success('Your order has been placed successfully.');
-    };
 
     const onMenuClick = (item) => {
-        setCheckoutDrawerOpen(false);
         setCartDrawerOpen(false);
         navigate(`/${item.key}`);
     };
@@ -146,65 +127,6 @@ function AppCart() {
                         },
                     ]}
                 />
-            </Drawer>
-            <Drawer
-                open={checkoutDrawerOpen}
-                onClose={() => {
-                    setCheckoutDrawerOpen(false);
-                }}
-                title="Confirm Order"
-            >
-                <Form onFinish={onConfirmOrder}>
-                    <Form.Item
-                        rules={[
-                            {
-                                required: true,
-                                message: 'Please enter your full name',
-                            },
-                        ]}
-                        label="Full Name"
-                        name="full_name"
-                    >
-                        <Input placeholder="Enter your full name.." />
-                    </Form.Item>
-                    <Form.Item
-                        rules={[
-                            {
-                                required: true,
-                                type: 'email',
-                                message: 'Please enter a valid email',
-                            },
-                        ]}
-                        label="Email"
-                        name="your_name"
-                    >
-                        <Input placeholder="Enter your email.." />
-                    </Form.Item>
-                    <Form.Item
-                        rules={[
-                            {
-                                required: true,
-                                message: 'Please enter your address',
-                            },
-                        ]}
-                        label="Address"
-                        name="your_address"
-                    >
-                        <Input placeholder="Enter your full address.." />
-                    </Form.Item>
-                    <Form.Item>
-                        <Checkbox defaultChecked disabled>
-                            Cash on Delivery
-                        </Checkbox>
-                    </Form.Item>
-                    <Typography.Paragraph type="secondary">
-                        More methods coming soon
-                    </Typography.Paragraph>
-                    <Button type="primary" htmlType="submit">
-                        {' '}
-                        Confirm Order
-                    </Button>
-                </Form>
             </Drawer>
         </div>
     );
