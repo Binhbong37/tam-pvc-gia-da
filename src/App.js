@@ -9,6 +9,7 @@ import Lam4Song from './pages/Lamsong/Lam4Song';
 import PhuKienKhac from './pages/PhuKienKhac';
 import TamDaNang from './pages/TamDaNang';
 import AppHeader from './components/Header';
+import Register from './pages/Register';
 function App() {
     return (
         <BrowserRouter>
@@ -27,6 +28,7 @@ function App() {
                             path="/phu-kien-khac"
                             element={<PhuKienKhac />}
                         />
+                        <Route path="/register" element={<Register />} />
                     </Routes>
                 </div>
             </div>

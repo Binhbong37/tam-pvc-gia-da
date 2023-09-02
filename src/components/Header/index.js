@@ -1,7 +1,7 @@
 import { MenuOutlined } from '@ant-design/icons';
 import { Badge, Drawer, Menu, Typography } from 'antd';
 import { useState } from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate, useLocation, Link } from 'react-router-dom';
 
 function AppHeader() {
     const navigate = useNavigate();
@@ -54,7 +54,9 @@ function AppHeader() {
                     },
                 ]}
             />
-            <Typography.Title>KangBang</Typography.Title>
+            <Typography.Title>
+                <Link to={'/register'}>KangBang</Link>
+            </Typography.Title>
             <AppCart />
         </div>
     );
