@@ -1,5 +1,3 @@
-// Sidebar imports
-
 import vd01 from '../assets/imgs/tampvc/01.jpg';
 import vd02 from '../assets/imgs/tampvc/02.jpg';
 import vd03 from '../assets/imgs/tampvc/03.jpg';
@@ -54,6 +52,7 @@ import vd74 from '../assets/imgs/tampvc/74.jpg';
 import vd75 from '../assets/imgs/tampvc/75.jpg';
 import vd77 from '../assets/imgs/tampvc/77.jpg';
 import vd77B from '../assets/imgs/tampvc/77B.jpg';
+import vd78 from '../assets/imgs/tampvc/VD78.png';
 import vd79 from '../assets/imgs/tampvc/79.jpg';
 import vd79B from '../assets/imgs/tampvc/79B.jpg';
 import vd81 from '../assets/imgs/tampvc/81.jpg';
@@ -198,6 +197,7 @@ export const PvcVanDa = [
     { id: 50, title: 'VD75', img: vd75 },
     { id: 51, title: 'VD77', img: vd77 },
     { id: 52, title: 'VD77B', img: vd77B },
+    { id: 'vd78', title: 'VD78', img: vd78 },
     { id: 53, title: 'VD79', img: vd79 },
     { id: 54, title: 'VD79B', img: vd79B },
     { id: 55, title: 'VD81', img: vd81 },

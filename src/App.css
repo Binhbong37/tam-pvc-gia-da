@@ -23,6 +23,10 @@ h1 {
     background-color: blue;
 }
 
+h2 {
+    margin-top: 0;
+}
+
 h1:hover {
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
     cursor: pointer;
