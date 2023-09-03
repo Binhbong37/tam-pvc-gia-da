@@ -1,0 +1,33 @@
+.formRegister {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group select {
+    width: 200px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.form-group input {
+    width: 200px;
+    height: 20px;
+}
+
+.form-group label {
+    display: block;
+}
+
+.form-group button {
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: blue;
+    color: #fff;
+    cursor: pointer;
+}
