@@ -7,6 +7,7 @@ import vd06 from '../assets/imgs/tampvc/06.jpg';
 import vd08B from '../assets/imgs/tampvc/08B.jpg';
 import vd09 from '../assets/imgs/tampvc/09.jpg';
 import vd10 from '../assets/imgs/tampvc/10.jpg';
+import vd11 from '../assets/imgs/tampvc/VD11.jpg';
 import vd12 from '../assets/imgs/tampvc/12.jpg';
 import vd13 from '../assets/imgs/tampvc/13.jpg';
 import vd14B from '../assets/imgs/tampvc/14B.jpg';
@@ -22,6 +23,7 @@ import vd25 from '../assets/imgs/tampvc/25.jpg';
 import vd27 from '../assets/imgs/tampvc/27.jpg';
 import vd29 from '../assets/imgs/tampvc/29.jpg';
 import vd30 from '../assets/imgs/tampvc/30.jpg';
+import vd32 from '../assets/imgs/tampvc/VD32.png';
 import vd33 from '../assets/imgs/tampvc/33.png';
 import vd35 from '../assets/imgs/tampvc/35.jpg';
 import vd37 from '../assets/imgs/tampvc/37.jpg';
@@ -48,7 +50,7 @@ import vd67 from '../assets/imgs/tampvc/67.jpg';
 import vd68 from '../assets/imgs/tampvc/68.jpg';
 import vd71 from '../assets/imgs/tampvc/71.jpg';
 import vd73 from '../assets/imgs/tampvc/73.jpg';
-import vd74 from '../assets/imgs/tampvc/74.jpg';
+import vd74 from '../assets/imgs/tampvc/74.png';
 import vd75 from '../assets/imgs/tampvc/75.jpg';
 import vd77 from '../assets/imgs/tampvc/77.jpg';
 import vd77B from '../assets/imgs/tampvc/77B.jpg';
@@ -152,6 +154,7 @@ export const PvcVanDa = [
     { id: 7, title: 'VD08B', img: vd08B },
     { id: 8, title: 'VD09', img: vd09 },
     { id: 9, title: 'VD10', img: vd10 },
+    { id: 'vd11', title: 'VD11', img: vd11 },
     { id: 10, title: 'VD12', img: vd12 },
     { id: 11, title: 'VD13', img: vd13 },
     { id: 12, title: 'VD14B', img: vd14B },
@@ -167,6 +170,7 @@ export const PvcVanDa = [
     { id: 22, title: 'VD27', img: vd27 },
     { id: 23, title: 'VD29', img: vd29 },
     { id: 'vd30', title: 'VD30', img: vd30 },
+    { id: 'vd32', title: 'VD32', img: vd32 },
     { id: 'vd33', title: 'VD33', img: vd33 },
     { id: 24, title: 'VD35', img: vd35 },
     { id: 25, title: 'VD37', img: vd37 },

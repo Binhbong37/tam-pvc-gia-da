@@ -1,86 +1,87 @@
+import { Link } from 'react-router-dom'
 import './style.css'
-import React, { useEffect, useState } from 'react';
-import { storage, db } from '../../firebase';
-import { getDownloadURL, ref, uploadBytesResumable } from 'firebase/storage';
-import { addDoc, collection, serverTimestamp } from 'firebase/firestore';
-import { useNavigate } from 'react-router-dom';
+// import React, { useEffect, useState } from 'react';
+// import { storage, db } from '../../firebase';
+// import { getDownloadURL, ref, uploadBytesResumable } from 'firebase/storage';
+// import { addDoc, collection, serverTimestamp } from 'firebase/firestore';
+// import { useNavigate } from 'react-router-dom';
 
 
-const initialS = {
-  title:'',
-  catelogy:'',
-}
+// const initialS = {
+//   title:'',
+//   catelogy:'',
+// }
 
 const Register = () => {
-  const [data, setData] = useState(initialS)
-  const {title, catelogy} = data
-  const [file, setFile] = useState(null);
-  const [progress, setProgress] = useState(null);
-  const navigate = useNavigate()
+  // const [data, setData] = useState(initialS)
+  // const {title, catelogy} = data
+  // const [file, setFile] = useState(null);
+  // const [progress, setProgress] = useState(null);
+  // const navigate = useNavigate()
 
 
-  useEffect(() => {
-    const uploadFile = () => {
-      const storageRef = ref(storage, file.name);
-      const uploadTask = uploadBytesResumable(storageRef, file);
+  // useEffect(() => {
+  //   const uploadFile = () => {
+  //     const storageRef = ref(storage, file.name);
+  //     const uploadTask = uploadBytesResumable(storageRef, file);
 
-      uploadTask.on("state_changed", (snapshot) => {
-        const progress = (snapshot.bytesTransferred/snapshot.totalBytes) * 100;
-        setProgress(progress);
-        switch(snapshot.state) {
-          case "paused":
-            console.log("upload is pause")
-            break;
-          case 'running':
-            console.log("upload is running");
-            break;
-          default:
-            console.log('DANG K LAM GI')
-            break;
-        }
-      }, (err) => {
-        console.log('loi',err)
-      },
-      () => {
-        getDownloadURL(uploadTask.snapshot.ref)
-        .then((url) => {
-          console.log(url);
-          setData((prev) => ({...prev, img: url}))
-        })
-      }
+  //     uploadTask.on("state_changed", (snapshot) => {
+  //       const progress = (snapshot.bytesTransferred/snapshot.totalBytes) * 100;
+  //       setProgress(progress);
+  //       switch(snapshot.state) {
+  //         case "paused":
+  //           console.log("upload is pause")
+  //           break;
+  //         case 'running':
+  //           console.log("upload is running");
+  //           break;
+  //         default:
+  //           console.log('DANG K LAM GI')
+  //           break;
+  //       }
+  //     }, (err) => {
+  //       console.log('loi',err)
+  //     },
+  //     () => {
+  //       getDownloadURL(uploadTask.snapshot.ref)
+  //       .then((url) => {
+  //         console.log(url);
+  //         setData((prev) => ({...prev, img: url}))
+  //       })
+  //     }
       
-      )
+  //     )
 
-    }
+  //   }
 
-    file && uploadFile()
-  }, [file]);
+  //   file && uploadFile()
+  // }, [file]);
 
-  const handleChange = (e) => {
-    setData({...data, [e.target.name]:e.target.value})
-  }
+  // const handleChange = (e) => {
+  //   setData({...data, [e.target.name]:e.target.value})
+  // }
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    if(!title) {
-      alert('Fill title')
-      return;
-    }
-    if(!catelogy) {
-      alert("Fill catelory");
-      return;
-    }
-    await addDoc(collection(db, catelogy), {
-      ...data,
-      timestamp:serverTimestamp()
-    });
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   if(!title) {
+  //     alert('Fill title')
+  //     return;
+  //   }
+  //   if(!catelogy) {
+  //     alert("Fill catelory");
+  //     return;
+  //   }
+  //   await addDoc(collection(db, catelogy), {
+  //     ...data,
+  //     timestamp:serverTimestamp()
+  //   });
 
-    navigate('/')
-  }
+  //   navigate('/')
+  // }
 
   return (
     <div className='formRegister'>
-     <form onSubmit={handleSubmit}>
+     {/* <form onSubmit={handleSubmit}>
       <div className='form-group'>
         <label>Title</label>
         <input name='title' value={title}
@@ -111,7 +112,10 @@ const Register = () => {
       >Submit</button>
       </div>
      
-     </form>
+     </form> */}
+
+     <h2>HELLO CHÀO MỪNG ĐẾN VỚI CHÚNG TÔI</h2>
+     <Link to={'/'}>Xem tấm PVC</Link>
     </div>
   )
 }

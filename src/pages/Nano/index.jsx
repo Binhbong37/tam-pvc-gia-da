@@ -1,15 +1,23 @@
 import React from 'react';
-import { Image } from 'antd';
+import { Image, List } from 'antd';
 import { TamNano } from '../../data';
 import Card from '../../components/Card';
 
 const Nano = () => {
   return (
-    <div className='cards'>
     <Image.PreviewGroup>
-      {TamNano.map((item, idx) => <Card key={idx} imga={item.img} title={item.title}/>)}
+      <List
+      dataSource={TamNano}
+      grid={{xs:2, sm:3, md:4,lg:5, xl:6, xxl:7}}
+      renderItem={(item) => {
+        return(
+          <Card key={item.id} imga={item.img} title={item.title} />
+        )
+      }}
+      >
+      </List>
+      
     </Image.PreviewGroup>
-  </div>
   )
 }
 
