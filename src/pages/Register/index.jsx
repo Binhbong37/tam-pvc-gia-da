@@ -114,8 +114,14 @@ const Register = () => {
      
      </form> */}
 
-     <h2>HELLO CHÀO MỪNG ĐẾN VỚI CHÚNG TÔI</h2>
-     <Link to={'/'}>Xem tấm PVC</Link>
+     <h2>CHÀO MỪNG ĐẾN VỚI CHÚNG TÔI</h2>
+     <p>Trang web đang được hoàn thiện, quý khách vui lòng tham khảo sản phẩm theo link bên dưới</p>
+     <p><Link to={'/'}>Tấm PVC</Link></p>
+     <p><Link to={'/tam-da-nang'}>Tấm ốp đa năng</Link></p>
+     <p><Link to={'/lam-song'}>Lam sóng</Link></p>
+     <p><Link to={'/nano'}>Tấm nano</Link></p>
+    
+     
     </div>
   )
 }

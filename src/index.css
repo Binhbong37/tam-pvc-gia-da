@@ -28,6 +28,12 @@ html {
     } */
 
     .ant-menu-submenu {
-        inset: 217px auto auto 231px !important;
+        inset: 217px auto auto 150px !important;
+    }
+}
+
+@media screen and (max-width: 318px) {
+    .ant-menu-submenu {
+        inset: 217px auto auto 100px !important;
     }
 }

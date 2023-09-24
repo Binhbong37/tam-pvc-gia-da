@@ -48,7 +48,7 @@ import vd65 from '../assets/imgs/tampvc/65.jpg';
 import vd66 from '../assets/imgs/tampvc/66.jpg';
 import vd67 from '../assets/imgs/tampvc/67.jpg';
 import vd68 from '../assets/imgs/tampvc/68.jpg';
-import vd71 from '../assets/imgs/tampvc/71.jpg';
+import vd71 from '../assets/imgs/tampvc/VD71.png';
 import vd73 from '../assets/imgs/tampvc/73.jpg';
 import vd74 from '../assets/imgs/tampvc/74.png';
 import vd75 from '../assets/imgs/tampvc/75.jpg';
@@ -76,6 +76,7 @@ import vd102 from '../assets/imgs/tampvc/VD102.jpg';
 import vd103 from '../assets/imgs/tampvc/VD103.jpg';
 import vd104 from '../assets/imgs/tampvc/VD104.jpg';
 import vd105 from '../assets/imgs/tampvc/VD105.jpg';
+import vd106 from '../assets/imgs/tampvc/VD106.png';
 import vd107 from '../assets/imgs/tampvc/107.jpg';
 import vd108 from '../assets/imgs/tampvc/108.jpg';
 import vd109 from '../assets/imgs/tampvc/109.jpg';
@@ -223,6 +224,7 @@ export const PvcVanDa = [
     { id: 71, title: 'VD103', img: vd103 },
     { id: 72, title: 'VD104', img: vd104 },
     { id: 73, title: 'VD105', img: vd105 },
+    { id: 'vd106', title: 'VD106', img: vd106 },
     { id: 74, title: 'VD107', img: vd107 },
     { id: 75, title: 'VD108', img: vd108 },
     { id: 76, title: 'VD109', img: vd109 },

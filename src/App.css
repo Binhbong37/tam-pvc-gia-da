@@ -59,25 +59,7 @@ h1:hover {
     padding: 1rem 1.5rem;
 }
 
-.cards {
-    margin: 0 auto;
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(6, 1fr);
-}
-
 /* Tablets */
-@media screen and (max-width: 1200px) {
-    .cards {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
-
-/* @media screen and (max-width: 1000px) {
-    .cards {
-        grid-template-columns: repeat(3, 1fr);
-    }
-} */
 
 @media screen and (max-width: 790px) {
     .appMenu {
@@ -87,9 +69,6 @@ h1:hover {
     .iconMenu {
         display: block;
         right: 50px;
-    }
-    .cards {
-        grid-template-columns: repeat(3, 1fr);
     }
 
     .main-layout {
@@ -102,11 +81,16 @@ h1:hover {
 }
 
 @media (max-width: 447px) {
-    .cards {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
     .main-layout {
         padding: 0;
+    }
+    .main-layout h2 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 318px) {
+    .ant-drawer-content-wrapper {
+        width: 200px !important;
     }
 }
