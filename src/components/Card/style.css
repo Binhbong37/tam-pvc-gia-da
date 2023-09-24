@@ -44,3 +44,25 @@
         margin-left: 0.5rem;
     }
 }
+
+@media screen and (max-width: 380px) {
+    .card {
+        width: 150px;
+        height: 150px;
+        margin-left: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 318px) {
+    .card {
+        width: 100px;
+        height: 100px;
+        margin-left: 0.5rem;
+    }
+
+    .card-footer {
+        text-align: center;
+        font-size: 12px;
+        margin-top: 0;
+    }
+}
