@@ -10,6 +10,7 @@ import PhuKienKhac from './pages/PhuKienKhac';
 import TamDaNang from './pages/TamDaNang';
 import AppHeader from './components/Header';
 import Register from './pages/Register';
+import AddProduct from './pages/addProduct';
 function App() {
     return (
         <BrowserRouter>
@@ -29,6 +30,7 @@ function App() {
                             element={<PhuKienKhac />}
                         />
                         <Route path="/register" element={<Register />} />
+                        <Route path="/addproduct" element={<AddProduct />} />
                     </Routes>
                 </div>
             </div>

@@ -26,11 +26,12 @@ import vd30 from '../assets/imgs/tampvc/30.jpg';
 import vd32 from '../assets/imgs/tampvc/VD32.png';
 import vd33 from '../assets/imgs/tampvc/33.png';
 import vd35 from '../assets/imgs/tampvc/35.jpg';
+import vd36 from '../assets/imgs/tampvc/VD36.png';
 import vd37 from '../assets/imgs/tampvc/37.jpg';
 import vd38 from '../assets/imgs/tampvc/38.jpg';
 import vd39 from '../assets/imgs/tampvc/39.jpg';
 import vd41 from '../assets/imgs/tampvc/41.jpg';
-import vd42 from '../assets/imgs/tampvc/42.jpg';
+import vd42 from '../assets/imgs/tampvc/VD42.png';
 import vd43 from '../assets/imgs/tampvc/43.jpg';
 import vd47 from '../assets/imgs/tampvc/47.jpg';
 import vd50 from '../assets/imgs/tampvc/50.jpg';
@@ -123,6 +124,7 @@ import FX237_5s from '../assets/imgs/lamsong/Lam5s/FX237.jpg';
 import FX34_5s from '../assets/imgs/lamsong/Lam5s/FX34.jpg';
 import HJL_5s from '../assets/imgs/lamsong/Lam5s/HJL.jpg';
 import HY102_5s from '../assets/imgs/lamsong/Lam5s/HY-102.jpg';
+import FX49_5s from '../assets/imgs/lamsong/Lam5s/FX49(150x10x2.9mm).png';
 
 import C2004 from '../assets/imgs/nano/C2004.jpg';
 import A50072 from '../assets/imgs/nano/5007-2.jpg';
@@ -143,7 +145,6 @@ import keInox from '../assets/imgs/phukienkhac/keInox.jpg';
 import nepDen from '../assets/imgs/phukienkhac/nepMauDen.png';
 import nepNhom from '../assets/imgs/phukienkhac/nepNhom.jpg';
 import nepDong from '../assets/imgs/phukienkhac/nepMauDong.jpg';
-// Sidebar Data
 
 export const PvcVanDa = [
     { id: 1, title: 'VD01', img: vd01 },
@@ -174,6 +175,7 @@ export const PvcVanDa = [
     { id: 'vd32', title: 'VD32', img: vd32 },
     { id: 'vd33', title: 'VD33', img: vd33 },
     { id: 24, title: 'VD35', img: vd35 },
+    { id: 'vd36', title: 'VD36', img: vd36 },
     { id: 25, title: 'VD37', img: vd37 },
     { id: 26, title: 'VD38', img: vd38 },
     { id: 27, title: 'VD39', img: vd39 },
@@ -277,6 +279,7 @@ export const Lam5Songthap = [
     { id: 6, title: 'HY-102', img: HY102_5s },
     { id: 7, title: 'FX34', img: FX34_5s },
     { id: 7, title: 'C2004', img: C2004_5s },
+    { id: 8, title: 'FX49', img: FX49_5s },
 ];
 
 export const TamNano = [
