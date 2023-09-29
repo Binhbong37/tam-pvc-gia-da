@@ -25,10 +25,23 @@
 }
 
 .card-footer {
-    margin-top: 0.5rem;
-    text-align: center;
-    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
     font-size: 17px;
+    font-weight: 600;
+}
+
+.card-footer p {
+    margin: 0;
+    margin-top: 0.5rem;
+}
+
+.card-footer p span {
+    padding: 0 0.5rem;
+    color: red;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1200px) {
@@ -51,6 +64,13 @@
         height: 150px;
         margin-left: 0.5rem;
     }
+    .card-footer {
+        font-size: 17px;
+        padding: 0;
+    }
+    .card-footer p {
+        margin-top: 0;
+    }
 }
 
 @media screen and (max-width: 318px) {
@@ -61,8 +81,11 @@
     }
 
     .card-footer {
-        text-align: center;
         font-size: 12px;
-        margin-top: 0;
+        padding: 0;
+    }
+
+    .card-footer p span {
+        padding: 0;
     }
 }
