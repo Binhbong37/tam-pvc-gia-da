@@ -1,11 +1,9 @@
-
 import './style.css'
 import React, { useEffect, useState } from 'react';
 import { storage, db } from '../../firebase';
 import { getDownloadURL, ref, uploadBytesResumable } from 'firebase/storage';
 import { addDoc, collection, serverTimestamp } from 'firebase/firestore';
 import { useNavigate } from 'react-router-dom';
-
 
 const initialS = {
   title:'',
@@ -18,7 +16,7 @@ const AddProduct = () => {
   const [file, setFile] = useState(null);
   const [progress, setProgress] = useState(null);
   const navigate = useNavigate()
-
+ 
 
   useEffect(() => {
     const uploadFile = () => {
@@ -76,6 +74,8 @@ const AddProduct = () => {
       timestamp:serverTimestamp()
     });
 
+
+
     navigate('/')
   }
 
@@ -113,8 +113,6 @@ const AddProduct = () => {
       </div>
      
      </form>
-
-     
     </div>
   )
 }
