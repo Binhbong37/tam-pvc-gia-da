@@ -52,7 +52,8 @@ const PhuKienKhac = () => {
     return(<Spinner />)
   }
   return (
-    
+    <>
+    <h2>Phụ kiện PVC & tấm đa năng </h2>
     <Image.PreviewGroup>
       <List
       dataSource={pvcImages}
@@ -72,6 +73,7 @@ const PhuKienKhac = () => {
       </List>
       
     </Image.PreviewGroup>
+    </>
   )
 }
 

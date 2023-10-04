@@ -19,11 +19,8 @@ const TamPVC = () => {
       snapshot.docs.forEach((doc) => {
         listPVC.push({id:doc.id, ...doc.data()})
       });
-      listPVC.sort((a, b) => {
-        if(a.title.toLowerCase() < b.title.toLowerCase()) return -1
-        if(a.title.toLowerCase() > b.title.toLowerCase()) return 1
-        return 0
-      })
+      listPVC.sort((a,b) => a.title.localeCompare(b.title, undefined, {numeric:true}))
+      
       setPvcImages(listPVC);
       seIsLoading(false)
     }, (err) => {

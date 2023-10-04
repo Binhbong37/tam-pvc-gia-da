@@ -31,15 +31,19 @@ function AppHeader() {
                         key: 'lam-song',
                         children: [
                             {
-                                label: 'Lam 3 sóng',
+                                label: 'Lam 3 sóng thấp',
                                 key: 'lam-3-song',
                             },
                             {
-                                label: 'Lam 4 sóng',
-                                key: 'lam-4-song',
+                                label: 'Lam 4 sóng cao',
+                                key: 'lam-4-song-cao',
                             },
                             {
-                                label: 'Lam 5 sóng',
+                                label: 'Lam 4 sóng thấp',
+                                key: 'lam-4-song-thap',
+                            },
+                            {
+                                label: 'Lam 5 sóng thấp',
                                 key: 'lam-5-song',
                             },
                         ],
@@ -112,8 +116,12 @@ function AppCart() {
                                     key: 'lam-3-song',
                                 },
                                 {
-                                    label: 'Lam 4 sóng',
-                                    key: 'lam-4-song',
+                                    label: 'Lam 4 sóng cao',
+                                    key: 'lam-4-song-cao',
+                                },
+                                {
+                                    label: 'Lam 4 sóng thấp',
+                                    key: 'lam-4-song-thap',
                                 },
                                 {
                                     label: 'Lam 5 sóng',

@@ -95,7 +95,10 @@ const AddProduct = () => {
       >
         <option value="">--choose--</option>
         <option value="pvc">PVC</option>
-        <option value="lamsong">Lamsong</option>
+        <option value="lam3s">Lam 3 sóng thấp</option>
+        <option value="lam4sc">Lam 4 SC</option>
+        <option value="lam4sT">Lam4ST</option>
+        <option value="lam5s">Lam5song</option>
         <option value="nano">Nano</option>
         <option value="danang">DangNang</option>
         <option value="phukienkhac">PhuKienKhac</option>

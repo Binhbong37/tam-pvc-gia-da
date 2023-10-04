@@ -23,7 +23,7 @@ function App() {
                         <Route path="/nano" element={<Nano />} />
                         <Route path="/lam-song" element={<Lamsong />} />
                         <Route path="/lam-3-song" element={<Lam3Song />} />
-                        <Route path="/lam-4-song" element={<Lam4Song />} />
+                        <Route path="/lam-4-song-cao" element={<Lam4Song />} />
                         <Route path="/lam-5-song" element={<Lam5Song />} />
                         <Route
                             path="/phu-kien-khac"
