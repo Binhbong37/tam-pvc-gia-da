@@ -11,6 +11,7 @@ import TamDaNang from './pages/TamDaNang';
 import AppHeader from './components/Header';
 import Register from './pages/Register';
 import AddProduct from './pages/addProduct';
+import Lam4SongThap from './pages/Lamsong/Lam4songThap';
 function App() {
     return (
         <BrowserRouter>
@@ -24,6 +25,10 @@ function App() {
                         <Route path="/lam-song" element={<Lamsong />} />
                         <Route path="/lam-3-song" element={<Lam3Song />} />
                         <Route path="/lam-4-song-cao" element={<Lam4Song />} />
+                        <Route
+                            path="/lam-4-song-thap"
+                            element={<Lam4SongThap />}
+                        />
                         <Route path="/lam-5-song" element={<Lam5Song />} />
                         <Route
                             path="/phu-kien-khac"

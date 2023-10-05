@@ -68,7 +68,6 @@ const TamPVC = () => {
       }}
       >
       </List>
-      
     </Image.PreviewGroup>
   )
 }

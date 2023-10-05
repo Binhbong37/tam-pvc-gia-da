@@ -8,13 +8,13 @@ import { Image, List } from 'antd';
 const haveKey = localStorage.getItem('havescrete');
 
 
-const Lam5Song = () => {
+const Lam4SongThap = () => {
   const [pvcImages, setPvcImages] = useState([]);
   const [isLoading, seIsLoading] = useState(false);
   
   useEffect(() => {
     seIsLoading(true);
-    const unsub = onSnapshot(collection(db, 'lam5s'), (snapshot) => {
+    const unsub = onSnapshot(collection(db, 'lam4sT'), (snapshot) => {
       let listPVC = [];
       snapshot.docs.forEach((doc) => {
         listPVC.push({id:doc.id, ...doc.data()})
@@ -40,7 +40,7 @@ const Lam5Song = () => {
   const handleDelete = async(id) => {
     try {
       if(window.confirm('Are you sure to delete this picture?')) {
-        await deleteDoc(doc(db, "lam5s", id));
+        await deleteDoc(doc(db, "lam4sT", id));
         setPvcImages(pvcImages.filter((img) => img.id !== id))
       }
     } catch (error) {
@@ -54,7 +54,7 @@ const Lam5Song = () => {
   }
   return (
     <>
-    <h2>Lam 5 sóng thấp</h2>
+    <h2>Lam 4 sóng thấp</h2>
     <Image.PreviewGroup>
       <List
       dataSource={pvcImages}
@@ -78,4 +78,4 @@ const Lam5Song = () => {
   )
 }
 
-export default Lam5Song
+export default Lam4SongThap
