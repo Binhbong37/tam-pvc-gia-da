@@ -13,7 +13,7 @@ const Card = ({ imga, title, keyImg, haveKey, handleDelete }) => {
     }, []);
     return (
         <div className="card">
-            <Image src={imga} />
+            <Image src={imga} loading="lazy" />
             <div className="card-footer">
                 <p>{title}</p>
                 {isAuth && (

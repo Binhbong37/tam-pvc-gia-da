@@ -5,7 +5,7 @@ const Register = () => {
   return (
     <div className='content'>
 
-     <h2>CHÀO MỪNG ĐẾN VỚI TỔNG KHO PVC KANGBANG</h2>
+     <h2>TỔNG KHO PVC VÂN ĐÁ KANGBANG</h2>
      <h3>Liên hệ: <a href='tel:0933692645'>0933 692 645</a></h3>
      <div className='map-kb'>
      <iframe
