@@ -12,6 +12,7 @@ import AppHeader from './components/Header';
 import Register from './pages/Register';
 import AddProduct from './pages/addProduct';
 import Lam4SongThap from './pages/Lamsong/Lam4songThap';
+import NotFound from './components/NotFound';
 function App() {
     return (
         <BrowserRouter>
@@ -30,12 +31,11 @@ function App() {
                             element={<Lam4SongThap />}
                         />
                         <Route path="/lam-5-song" element={<Lam5Song />} />
-                        <Route
-                            path="/phu-kien-khac"
-                            element={<PhuKienKhac />}
-                        />
+                        <Route path="/phu-kien-pvc" element={<PhuKienKhac />} />
+                        <Route path="/phao-chi" element={<PhuKienKhac />} />
                         <Route path="/register" element={<Register />} />
                         <Route path="/addproduct" element={<AddProduct />} />
+                        <Route path="*" element={<NotFound />} />
                     </Routes>
                 </div>
             </div>

@@ -53,8 +53,12 @@ function AppHeader() {
                         key: 'nano',
                     },
                     {
-                        label: 'Keo dán & phụ kiện khác',
-                        key: 'phu-kien-khac',
+                        label: 'Phụ kiện',
+                        key: 'phu-kien',
+                        children: [
+                            { label: 'Keo & nẹp nhôm', key: 'phu-kien-pvc' },
+                            { label: 'Các loại phào', key: 'phao-chi' },
+                        ],
                     },
                 ]}
             />
@@ -134,8 +138,15 @@ function AppCart() {
                             key: 'nano',
                         },
                         {
-                            label: 'Keo dán & phụ kiện khác',
-                            key: 'phu-kien-khac',
+                            label: 'Phụ kiện',
+                            key: 'phu-kien',
+                            children: [
+                                {
+                                    label: 'Keo & nẹp nhôm',
+                                    key: 'phu-kien-pvc',
+                                },
+                                { label: 'Các loại phào', key: 'phao-chi' },
+                            ],
                         },
                     ]}
                 />

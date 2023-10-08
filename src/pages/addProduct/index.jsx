@@ -102,6 +102,7 @@ const AddProduct = () => {
         <option value="nano">Nano</option>
         <option value="danang">DangNang</option>
         <option value="phukienkhac">PhuKienKhac</option>
+        <option value="phaochi">Phào chỉ</option>
       </select>
       </div>
       
